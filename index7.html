@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      height: 1000px;
+      border: 2px solid black;
+    }
+    .first {
+      position: static;
+      top: 50px;
+    }
+    .second {
+      position: relative;
+
+      top: 200px;
+    }
+    .third {
+      position: absolute;
+      z-index: 20;
+    }
+    .fourth {
+      position: sticky;
+      z-index: 5;
+      top: 200px;
+    }
+    .fifth {
+      position: fixed;
+      top: 50px;
+    }
+    .secondPara {
+      height: 500px;
+    }
+  </style>
+  <body>
+    <h1>Position property</h1>
+    <div class="container">
+      <img
+        src="pic 1.avif"
+        alt="first"
+        class="first"
+        height="200px"
+        width="200px"
+      />
+      <img
+        src="pic 2.avif"
+        alt="second"
+        class="second"
+        height="200px"
+        width="200px"
+      />
+      <img
+        src="pic 3.avif"
+        alt="third"
+        class="third"
+        height="200px"
+        width="200px"
+      />
+      <img
+        src="pic 4.avif"
+        alt="fourth"
+        class="fourth"
+        height="200px"
+        width="200px"
+      />
+      <img
+        src="pic 5.avif"
+        alt="fifth"
+        class="fifth"
+        height="200px"
+        width="200px"
+      />
+    </div>
+    <div class="secondPara">this is second container</div>
+  </body>
+</html>

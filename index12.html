@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Example</title>
+    <style>
+      .container {
+        display: flex;
+        max-width: 1400px;
+        width: 100%;
+        border: 2px solid black;
+      }
+      .item {
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        color: white;
+      }
+
+      /* Case 1: Sirf flex-basis */
+      #box1 {
+        background: red;
+        flex: 0 0 300px; /* grow=0, shrink=0, basis=300px */
+      }
+
+      /* Case 2: Basis + Grow */
+      #box2 {
+        background: green;
+        flex: 2 0 200px; /* 200px start karega, extra space milta hai to 2x grow karega */
+      }
+
+      /* Case 3: Basis + Shrink */
+      #box3 {
+        background: blue;
+        flex: 0 5 400px; /* 400px start karega, space kam hoga to shrink karega */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex-basis Example</h2>
+    <div class="container">
+      <div class="item" id="box1">Box 1</div>
+      <div class="item" id="box2">Box 2</div>
+      <div class="item" id="box3">Box 3</div>
+    </div>
+  </body>
+</html>

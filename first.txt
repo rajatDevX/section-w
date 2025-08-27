@@ -1,0 +1,18 @@
+parent-
+  property-
+  display:flex(parent me denge)
+  flex-direction-row   row-reverse  column  column reverse
+
+  main-axis (by default horizontal (flex-direction row me))
+  cross-axis(by default vertical(flex-direction column me))
+
+  main-axis(vertical (flex-direction column me))
+  cross-axis(horizontal(flex-direction column me))
+
+
+  justify-content----
+  1-start
+  2-end
+  3-space-between(first and last box border per and then equal  distance)
+   space-around-(double the distance which is between first box and border)
+   space evenly-(equal distance between each box)

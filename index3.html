@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 1000px;
+
+        width: 100vw;
+
+        border: 1px solid black;
+        margin: 50px;
+      }
+      .first {
+        position: static;
+        top: 5px;
+      }
+      .second {
+        position: relative;
+        top: 15px;
+      }
+      .third {
+        position: sticky;
+        top: 5px;
+      }
+      .fourth {
+        top: 50px;
+        position: fixed;
+      }
+
+      .fiveth {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="pic 1.avif" height="100px" width="100px" alt="" class="first" />
+      <img
+        src="pic 2.avif"
+        height="100px"
+        width="100px"
+        alt=""
+        class="second"
+      />
+      <img src="pic 3.avif" height="100px" width="100px" alt="" class="third" />
+      <img
+        src="pic 5.avif"
+        height="100px"
+        width="100px"
+        alt=""
+        class="fourth"
+      />
+      <img
+        src="pic 4.avif"
+        alt=""
+        height="100px "
+        width="100px"
+        class="fiveth"
+      />
+    </div>
+    <div
+      class="parent"
+      style="height: 500px; width: 500px; border: 1px solid black"
+    >
+      this is a parent element
+    </div>
+  </body>
+</html>
