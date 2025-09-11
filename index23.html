@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes</title>
+    <style>
+      button {
+        border: none;
+        background-color: blue;
+        color: white;
+      }
+      button:hover {
+        background-color: sandybrown;
+      }
+      button:active {
+        background-color: green;
+      }
+      input {
+        outline: none;
+      }
+      input:focus {
+        border: 2px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>hover effect</h2>
+    <button>Click Here</button>
+    <input type="text" placeholder="click here to see the focus effect" />
+  </body>
+</html>
