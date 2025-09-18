@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tooltip {
+        border: 1px solid black;
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+      }
+      .tooltiptext {
+        background-color: aqua;
+        position: absolute;
+        bottom: 120%;
+        visibility: visible;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      .tooltiptext::after {
+        content: "";
+        border: 6px solid;
+        border-color: black transparent transparent transparent;
+        top: 100%;
+        position: absolute;
+        left: 50%;
+      }
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip">
+      <span class="tooltiptext">This is very important text</span>
+      <span>👉Hover over me👈</span>
+    </div>
+  </body>
+</html>
