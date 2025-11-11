@@ -1,0 +1,18 @@
+console.log('a'.charCodeAt(0));
+console.log(String.fromCharCode(100));
+
+coercion
+implicit coercion
+
+
+explicit coercion
+equality operator
+console.log("22"==22);true
+value compare only
+
+strictly equality operator
+console.log("22"===22);false
+value+type conversion
+
+NaN-Not a Number
+isNaN()-not a number function

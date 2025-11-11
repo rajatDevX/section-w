@@ -1,0 +1,24 @@
+var---redeclare possible, reassign possible
+var a=56;
+var a=78;
+(redeclare possible)
+var a=97;
+a=65;
+(reassign possible)
+
+
+let---reassign possible, redeclare not possible
+let a=56;
+let a=78;
+(redeclare not  possible)
+let a=97;
+a=65;
+(reassign possible)
+
+const---reassign not possible, redeclare not possible
+const a=56;
+const a=78;
+(redeclare not  possible)
+const a=97;
+a=65;
+(reassign not possible)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">This is my first DOM exercise</h1>
+    <h1 id="heading2">this is my second heading</h1>
+    <p class="paragraph">this is my first paragraph</p>
+    <script>
+      let heading = document.getElementById("heading");
+      console.log(heading);
+      let new1 = document.getElementsByTagName("h1");
+      let para = document.getElementsByClassName("paragraph");
+      let newHeading = document.querySelector("h1");
+      let newHeading2 = document.querySelectorAll("h1");
+      console.log(new1[0]);
+      console.log(new1[1]);
+      console.log(para[0]);
+      console.log(newHeading);
+      console.log(newHeading2);
+      console.log(newHeading2[0]);
+      console.log(new1);
+    </script>
+  </body>
+</html>
